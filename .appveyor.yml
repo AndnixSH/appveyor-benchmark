@@ -1,0 +1,13 @@
+image:
+  - ubuntu2204
+
+configuration: Release
+
+platform:
+  - x64
+
+build_script:
+  - sudo apt-get update
+  - sudo apt-get install -y speedtest-cli neofetch
+  - neofetch
+  - speedtest-cli
