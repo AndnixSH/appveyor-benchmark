@@ -10,4 +10,17 @@ build_script:
   - sudo apt-get update
   - sudo apt-get install -y speedtest-cli neofetch
   - neofetch
+  - curl https://raw.githubusercontent.com/Mangeshrex/rxfetch/main/rxfetch | bash
+  - df -H
+  - lscpu
+  - dd if=/dev/zero of=tempfile bs=2M count=1024
+  - dd if=/dev/zero of=tempfile bs=2M count=1024
+  - dd if=/dev/zero of=tempfile bs=2M count=1024
+  - dd if=tempfile of=/dev/zero bs=2M count=1024
+  - dd if=tempfile of=/dev/zero bs=2M count=1024
+  - dd if=tempfile of=/dev/zero bs=2M count=1024
   - speedtest-cli
+  - wget https://cdn.geekbench.com/Geekbench-6.2.2-Linux.tar.gz
+  - tar xf Geekbench-6.2.2-Linux.tar.gz
+  - cd Geekbench-6.2.2-Linux
+  - ./geekbench6
